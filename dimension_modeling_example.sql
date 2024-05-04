@@ -30,15 +30,17 @@ create table pos_revenue (
 	total_revenue DECIMAL(50, 2),
 )
 
--- POS SALES
+-- POS SALES --
 insert into store_trans.pos_sales values (1, 2, '2024-01-01', '07:00:00', 100.0, 1, 1, 1);
 insert into store_trans.pos_sales values (2, 1, '2024-01-02', '08:00:00', 105.0, 1, 1, 1);
+insert into store_trans.pos_sales values (2, 1, '2024-01-03', '08:00:00', 110.0, 1, 1, 1);
+insert into store_trans.pos_sales values (2, 1, '2024-01-04', '08:00:00', 115.0, 1, 1, 1);
 
--- POS PRODUCTS
+-- POS PRODUCTS --
 insert into store_trans.pos_products values (1, 'Mobil', 'Roda Empat', 1000000.0, 1);
 insert into store_trans.pos_products values (2, 'Motor', 'Roda Dua', 12000.0, 1);
 
--- POS STORES
+-- POS STORES -- 
 insert into store_trans.pos_stores values (1, 'A', 'Jakarta');
 insert into store_trans.pos_stores values (2, 'B', 'Jogja');
 
